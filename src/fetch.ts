@@ -1,5 +1,5 @@
-const url = Deno.args[0];
-const res = await fetch(url);
+const [url] = Deno.args;
+const getUrl = await fetch(`http://${url}`);
 
-const body = new Uint8Array(await res.arrayBuffer());
+const body = new Uint8Array(await getUrl.arrayBuffer());
 await Deno.stdout.write(body);
