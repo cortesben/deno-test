@@ -40,3 +40,11 @@ deno run --allow-net src/server.ts
 ```
 
 Starts up a small http server that returns as a response Hello
+
+### Run test
+
+```
+deno run src/test.ts
+```
+
+Runs test with a native assert library.
