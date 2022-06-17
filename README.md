@@ -49,6 +49,14 @@ deno run src/test.ts
 
 Runs test with a native assert library.
 
+### Run Unix CAT command
+
+```
+deno run --allow-read ./src/cat.ts ./src/app.ts 
+```
+
+This reads a file and shows it on stout
+
 ### Complile targets for programs
 
 ```
