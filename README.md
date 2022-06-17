@@ -48,3 +48,12 @@ deno run src/test.ts
 ```
 
 Runs test with a native assert library.
+
+### Complile targets for programs
+
+```
+deno compile --unstable --allow-net --target x86_64-unknown-linux-gnu --output curlClone https://raw.githubusercontent.com/cortesben/deno-test/main/src/fetch.ts
+```
+
+--target [possible values: x86_64-unknown-linux-gnu, x86_64-pc-windows-msvc,
+x86_64-apple-darwin, aarch64-apple-darwin]

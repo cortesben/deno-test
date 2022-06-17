@@ -1,3 +1,5 @@
+// Making an HTTP request
+
 const [url] = Deno.args;
 const getUrl = await fetch(`http://${url}`);
 
